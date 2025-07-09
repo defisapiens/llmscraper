@@ -18,7 +18,7 @@ A Python port of the [LLM-powered web scraping library](https://github.com/mishu
 
 3.  **Install Playwright browser binaries:**
     ```bash
-    npx playwright install
+    uv run playwright install
     ```
 
 ## Usage
