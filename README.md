@@ -4,9 +4,9 @@ A Python port of the [LLM-powered web scraping library](https://github.com/mishu
 
 ## Installation
 
-    ```bash
-    pip install llmscraper
-    ```
+```bash
+pip install llmscraper
+```
 
 ## Usage
 ```python
