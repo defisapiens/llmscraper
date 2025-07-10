@@ -4,13 +4,8 @@ A Python port of the [LLM-powered web scraping library](https://github.com/mishu
 
 ## Installation
 
-1.  **Create a virtual environment and install dependencies:**
     ```bash
-    uv sync
-    ```
-2.  **Install Playwright browser binaries:**
-    ```bash
-    uv run playwright install
+    pip install llmscraper
     ```
 
 ## Usage
