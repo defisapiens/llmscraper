@@ -3,10 +3,11 @@ name = "llmscraper"
 version = "0.1.0"
 description = "LLM-powered web scraping in Python"
 authors = [
-    {name = "defisapiens", email = "18736958+defisapiens@users.noreply.github.com"},
+    {name = "defisapiens", email = "defisapiens@protonmail.com"},
 ]
 readme = "README.md"
 requires-python = ">=3.9"
+licence = {text = "MIT"}
 dependencies = [
     "playwright>=1.44.0",
     "pydantic>=2.7.4",
