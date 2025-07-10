@@ -16,10 +16,10 @@ A Python port of the [LLM-powered web scraping library](https://github.com/mishu
 ## Usage
 ```python
 import asyncio
+import instructor
 from typing import List
 from playwright.async_api import async_playwright
 from pydantic import BaseModel
-from openai import AsyncOpenAI
 from llmscraper import LLMScraper
 
 class Story(BaseModel):
@@ -33,7 +33,7 @@ class HackerNews(BaseModel):
     stories: List[Story]
 
 async def main():
-    client = AsyncOpenAI()
+    client = instructor.from_provider("openai/gpt-4o-mini", async_client=True)
     scraper = LLMScraper(client)
 
     async with async_playwright() as p:
@@ -44,7 +44,6 @@ async def main():
         result = await scraper.run(
             page,
             schema=HackerNews,
-            options={"limit": 5},
         )
         print(result)
 
